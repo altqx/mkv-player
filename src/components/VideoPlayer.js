@@ -1,4 +1,3 @@
-/* global SubtitlesOctopus */
 import React, { Component } from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.min.css";
@@ -10,9 +9,10 @@ class VideoPlayer extends Component {
         video: this.videoNode,
         subUrl: this.props.subtitle,
         fonts: this.props.fonts,
-        workerUrl: "/subtitles-octopus/subtitles-octopus-worker.js"
+        workerUrl: "/jassub/jassub-worker.js",
+        wasmUrl: "/jassub/jassub-worker.wasm"
       };
-      this.subtitlesOctopus = new SubtitlesOctopus(options);
+      this.subtitlesRenderer = new window.JASSUB(options);
     });
   }
 
@@ -20,14 +20,11 @@ class VideoPlayer extends Component {
     if (this.player) {
       this.player.dispose();
     }
-    if (this.subtitlesOctopus) {
-      this.subtitlesOctopus.dispose();
+    if (this.subtitlesRenderer) {
+      this.subtitlesRenderer.dispose();
     }
   }
 
-  // wrap the player in a div with a `data-vjs-player` attribute
-  // so videojs won't create additional wrapper in the DOM
-  // see https://github.com/videojs/video.js/pull/3856
   render() {
     return (
       <div>

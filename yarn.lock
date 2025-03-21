@@ -6650,6 +6650,13 @@ istanbul-reports@^3.0.2:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
 
+jassub@^1.7.18:
+  version "1.7.18"
+  resolved "https://registry.yarnpkg.com/jassub/-/jassub-1.7.18.tgz#51710bb0b5d8854eb1d73bf2ca7f1c97fd5264e5"
+  integrity sha512-8cYnJlWuUP7xsdvoYyLVIcvXVa+0NvP1H1//yPck/LOHdnzY4KRwELNVx0khEd5BLN3bfWnMrcqFiHyTINObhA==
+  dependencies:
+    rvfc-polyfill "^1.0.7"
+
 jest-changed-files@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-26.6.2.tgz#f6198479e1cc66f22f9ae1e22acaa0b429c042d0"
@@ -7293,10 +7300,6 @@ levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
-
-"libass-wasm@https://github.com/Dador/JavascriptSubtitlesOctopus#4.0.0":
-  version "4.0.0"
-  resolved "https://github.com/Dador/JavascriptSubtitlesOctopus#147473ffc3771e4658304694bd21a3448ed24804"
 
 lines-and-columns@^1.1.6:
   version "1.1.6"
@@ -10158,6 +10161,11 @@ rust-result@^1.0.0:
   integrity sha1-NMdbLm3Dn+WHXlveyFteD5FTb3I=
   dependencies:
     individual "^2.0.0"
+
+rvfc-polyfill@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/rvfc-polyfill/-/rvfc-polyfill-1.0.7.tgz#e02975371be3326680a04f8005bfb1fc57b6c148"
+  integrity sha512-seBl7J1J3/k0LuzW2T9fG6JIOpni5AbU+/87LA+zTYKgTVhsfShmS8K/yOo1eeEjGJHnAdkVAUUM+PEjN9Mpkw==
 
 rxjs@^6.6.7:
   version "6.6.7"

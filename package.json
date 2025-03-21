@@ -5,7 +5,6 @@
   "dependencies": {
     "ebml": "2.2.4",
     "filereader-stream": "^2.0.0",
-    "libass-wasm": "https://github.com/Dador/JavascriptSubtitlesOctopus#4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-dropzone": "^4.3.0",
@@ -20,6 +19,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "^6.4.1",
     "husky": "^4.3.8",
+    "jassub": "^1.7.18",
     "lint-staged": "^11.1.2",
     "prettier": "1.13.7",
     "react-app-rewired": "^2.1.8"

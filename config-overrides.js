@@ -6,13 +6,17 @@ module.exports = function override(config, env) {
     new CopyWebpackPlugin({
       patterns: [
         {
-          context:
-            path.resolve(__dirname, "node_modules") + "/libass-wasm/dist/js",
+          context: path.resolve(__dirname, "node_modules") + "/jassub/dist",
           from: "*",
-          to: "subtitles-octopus",
+          to: "jassub",
           globOptions: {
-            ignore: "*.asm.js" // Not used
+            ignore: "*.asm.js"
           }
+        },
+        {
+          context: path.resolve(__dirname, "node_modules") + "/jassub/src",
+          from: "*",
+          to: "jassub"
         }
       ]
     })

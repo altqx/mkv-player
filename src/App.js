@@ -25,7 +25,7 @@ class App extends Component {
         for (let f of files) {
           if ((f.name.endsWith(".ass") || f.name.endsWith(".ssa")) && !subtitle)
             subtitle = URL.createObjectURL(new Blob([f.data]));
-          else if (f.name.endsWith(".ttf"))
+          else if (f.name.endsWith(".ttf") || f.name.endsWith(".TTF"))
             fonts.push(URL.createObjectURL(new Blob([f.data])));
         }
         this.setState({
@@ -87,10 +87,7 @@ class App extends Component {
             <a href="https://videojs.com/">video.js</a>,{" "}
             <a href="https://github.com/themasch/node-ebml">node-ebml</a>,{" "}
             <a href="https://github.com/qgustavor/mkv-extract">mkv-extract</a>{" "}
-            and{" "}
-            <a href="https://github.com/Dador/JavascriptSubtitlesOctopus">
-              SubtitlesOctopus
-            </a>.
+            and <a href="https://github.com/ThaUnknown/jassub">JASSUB</a>.
           </p>
           <p>
             Want a better UI?{" "}
